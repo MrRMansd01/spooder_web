@@ -1,0 +1,242 @@
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #00664F, #FFFFFF);
+  }
+  
+  .auth-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .auth-card h2 {
+    text-align: center;
+    color: #00664F;
+    margin-bottom: 1.5rem;
+  }
+  
+  .input-group {
+    margin-bottom: 1rem;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .auth-button {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #00664F;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .auth-button:disabled {
+    background-color: #a5d6a7;
+    cursor: not-allowed;
+  }
+  
+  .auth-button:hover:not(:disabled) {
+    background-color: #004d3a;
+  }
+  
+  .error-message {
+    color: #d32f2f;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .switch-auth {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .switch-auth a {
+    color: #00664F;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+body, html, #root {
+  width: 100%;
+    height: 108%;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  }
+  
+  .auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    /* این گرادیانت معادل Brush.linearGradient شماست */
+    background: linear-gradient(to bottom, #00664F, #FFFFFF);
+    padding: 20px;
+  }
+  
+  .auth-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+    backdrop-filter: blur(5px); /* افکت شیشه‌ای زیبا */
+  }
+  
+  .auth-card h2 {
+    text-align: center;
+    color: #004d3a;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .input-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #00664F;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid transparent;
+    border-bottom: 2px solid #00664F; /* فقط خط زیرین، شبیه به طرح شما */
+    border-radius: 0;
+    font-size: 1.2rem;
+    background-color: transparent;
+    color: #333;
+    font-weight: 500;
+    transition: border-color 0.3s;
+  }
+  
+  .input-group input:focus {
+    outline: none;
+    border-bottom-color: #00896C;
+  }
+  
+  .auth-button {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #00664F;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .auth-button:disabled {
+    background-color: #a5d6a7;
+    cursor: not-allowed;
+  }
+  
+  .auth-button:hover:not(:disabled) {
+    background-color: #004d3a;
+  }
+  
+  .error-message {
+    color: #d32f2f;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .switch-auth {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+  
+  .switch-auth p {
+    color: #555;
+  }
+  
+  .switch-auth a {
+    color: #00664F;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .fab {
+    margin-bottom: 14px;
+    margin-right: 10px;
+    position:fixed;
+    bottom: 80px; /* فاصله از پایین صفحه (بالای فوتر) */
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #004d3acb; /* رنگ سبز روشن شبیه به طرح اصلی */
+    color: #000000cb; /* رنگ آیکون + */
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 60px; /* برای وسط‌چین کردن عمودی + */
+    text-align: center;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 20; /* بالاتر از بقیه محتوا */
+    transition: transform 0.2s ease-in-out;
+  }
+  .error-message {
+  color: #D32F2F; /* Red */
+  background-color: #FFCDD2;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.success-message {
+  color: #388E3C; /* Green */
+  background-color: #C8E6C9;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  margin-bottom: 1rem;
+}

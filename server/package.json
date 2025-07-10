@@ -1,0 +1,14 @@
+{
+  "name": "spooder-web-app-server",
+  "version": "1.0.0",
+  "description": "Server for Spooder Web App",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.50.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}

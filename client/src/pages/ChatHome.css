@@ -1,0 +1,150 @@
+
+  
+  /* محتوای اصلی صفحه چت که تمام فضای باقی‌مانده را می‌گیرد */
+  .chat-home-content {
+    flex-grow: 1;
+    margin-top: 50px;
+    padding: 20px 16px 80px 16px; /* 80px برای فاصله از فوتر */
+  }
+  
+  .chat-home-header h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .search-bar {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px 20px;
+    border: 1px solid #ddd;
+    border-radius: 24px;
+    margin-bottom: 24px;
+    font-size: 1rem;
+  }
+  
+  .channel-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .channel-item {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .channel-item:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .channel-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 16px;
+    object-fit: cover;
+  }
+  
+  .channel-name {
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #181D27;
+  }
+  
+  /* --- Add Channel Modal Styles --- */
+  /* این استایل‌ها می‌توانند در یک فایل CSS عمومی قرار گیرند تا تکرار نشوند */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: white;
+    width: 100%;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    padding: 20px;
+    box-sizing: border-box;
+    animation: slide-up 0.3s ease-out;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @keyframes slide-up {
+    from { transform: translateY(100%); }
+    to { transform: translateY(0); }
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  
+  .modal-header h2 { margin: 0; font-size: 1.5rem; }
+  .close-button { background: none; border: none; font-size: 1.8rem; cursor: pointer; color: #888; }
+  
+  .add-channel-form .form-group { margin-bottom: 20px; }
+  .add-channel-form label { display: block; margin-bottom: 8px; font-weight: 500; color: #626060; }
+  .add-channel-form input[type="text"] { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; box-sizing: border-box; }
+  
+  .user-list {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  .user-item {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .user-item:last-child {
+    border-bottom: none;
+  }
+  
+  .user-item input[type="checkbox"] {
+    margin-right: 20px;
+    width: 18px;
+    height: 18px;
+  }
+  
+  .user-item img{
+    height: 18px;
+    width: 18px;
+  }
+  .create-channel-button {
+    width: 100%;
+    padding: 16px;
+    border-radius: 12px;
+    border: none;
+    background-color: #00664F;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  

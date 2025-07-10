@@ -1,0 +1,151 @@
+/* Layout اصلی صفحه چت */
+.chat-room-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* ارتفاع کامل صفحه */
+  width: 100%;
+  margin: 0 auto;
+  background-color: #f0f2f5;
+}
+
+.chat-room-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  flex-shrink: 0; /* جلوگیری از کوچک شدن هدر */
+}
+
+.back-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 16px;
+  color: #555;
+}
+
+/* لیست پیام‌ها */
+.message-list {
+  flex-grow: 1; /* تمام فضای باقی‌مانده را اشغال می‌کند */
+  overflow-y: auto; /* فقط در صورت نیاز اسکرول عمودی نشان می‌دهد */
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* بخش ورودی پیام */
+.message-input-area {
+  padding: 8px 12px;
+  background-color: #ffffff;
+  border-top: 1px solid #e0e0e0;
+  flex-shrink: 0; /* جلوگیری از کوچک شدن فوتر */
+}
+
+.message-form {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.message-input {
+  flex-grow: 1;
+  border: none;
+  background-color: #f0f2f5;
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+
+.message-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+/* استایل دکمه‌های آیکون */
+.icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  color: #5f6368;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.icon-button:hover {
+  background-color: #f1f3f4;
+}
+
+.send-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.send-button:hover {
+  background-color: #0056b3;
+}
+
+/* استایل حباب‌های پیام (بدون تغییر زیاد) */
+.message-bubble-wrapper {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  max-width: 75%;
+}
+
+.message-bubble-wrapper.me {
+  align-self: flex-end;
+  flex-direction: row-reverse;
+}
+
+.message-bubble-wrapper.other {
+  align-self: flex-start;
+}
+
+.chat-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.message-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.sender-name {
+  font-size: 0.8rem;
+  color: #555;
+  margin-bottom: 4px;
+  margin-left: 8px;
+}
+
+.message-bubble {
+  padding: 8px 12px;
+  border-radius: 18px;
+  color: #111;
+  line-height: 1.4;
+}
+
+.message-bubble-wrapper.me .message-bubble {
+  background-color: #dcf8c6;
+  border-bottom-right-radius: 4px;
+}
+
+.message-bubble-wrapper.other .message-bubble {
+  background-color: #ffffff;
+  border-bottom-left-radius: 4px;
+}
+
+.message-image {
+  max-width: 250px;
+  border-radius: 12px;
+  display: block;
+}

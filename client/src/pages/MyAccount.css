@@ -1,0 +1,84 @@
+.my-account-content {
+    flex-grow: 1;
+    margin-top: 20px;
+    padding: 20px 16px 80px 16px;
+    height: 100vh;
+    background-color: #f9f9f9;
+  }
+  
+  .my-account-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    margin-top: 20px;
+  }
+  
+  .my-account-header .back-button {
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    margin-right: 16px;
+  }
+  
+  .my-account-header h1 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  .profile-picture-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+  
+  .profile-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 12px;
+  }
+  
+  .change-picture-btn {
+    background: none;
+    border: none;
+    color: #00664F;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .edit-profile-form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .edit-profile-form label {
+    display: block;
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 8px;
+  }
+  
+  .edit-profile-form input {
+    width: 90%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  .save-changes-btn {
+    width: 100%;
+    padding: 16px;
+    border-radius: 12px;
+    border: none;
+    background-color: #00664F;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+    
