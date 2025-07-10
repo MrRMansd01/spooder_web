@@ -6,7 +6,7 @@ import './ChatRoom.css';
 
 // کلاینت سوپابیس برای قابلیت‌های لحظه‌ای (Real-time) و آپلود فایل
 const supabaseUrl = 'SUPABASE_URL';
-const supabaseKey = 'SUPABASE_URL';
+const supabaseKey = 'SUPABASE_KEY_ANON';
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 // هوک برای دریافت اطلاعات کاربر فعلی
